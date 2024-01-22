@@ -1,0 +1,1 @@
+print("Este aplicativo foi criado para estudos de Git")
