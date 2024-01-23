@@ -19,6 +19,17 @@ except:
     print("Esta iteração falhou")
 
 
+class Carro(object):
+    def FaleComigo(self):
+        print("Sou um carro.")
 
-a = input("Digite um valor:")
-print(a)
+class Fusca(Carro):
+    def FaleComFusca(self):
+        print("Sou um Fusca.")
+
+x = Carro()
+y = Fusca()
+
+x.FaleComigo()
+y.FaleComigo()
+y.FaleComFusca()
