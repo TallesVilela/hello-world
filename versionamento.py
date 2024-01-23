@@ -1,24 +1,3 @@
-print("Este aplicativo foi criado para estudos de Git")
-
-n = range(11)
-
-for i in n:
-    print(i)
-
-
-if n[10] < 10:
-    print("Cuidado com os índices")
-
-
-
-
-try:
-    for i in n:
-        print(i)
-except:
-    print("Esta iteração falhou")
-
-
 class Carro(object):
     def FaleComigo(self):
         print("Sou um carro.")
@@ -33,3 +12,16 @@ y = Fusca()
 x.FaleComigo()
 y.FaleComigo()
 y.FaleComFusca()
+
+# Entendendo uma função lambda:
+
+# Sintaxe básica -> lambda argumentos: expressão
+# Ex: square = lambda x: x**2 
+
+def calcula(n):
+
+  return lambda a : a * n
+
+x = calcula(4) # x agora é a função e 4 é o n.
+
+print(x(11)) # Aqui o 11 assume o valor de a
