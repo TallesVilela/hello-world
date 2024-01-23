@@ -19,3 +19,6 @@ except:
     print("Esta iteração falhou")
 
 
+
+a = input("Digite um valor:")
+print(a)
